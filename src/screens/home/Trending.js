@@ -25,9 +25,10 @@ class Trending extends Component {
               <ListGroup.Item>9. Kantor</ListGroup.Item>
 
               <ListGroup.Item>10. Pabrik</ListGroup.Item>
+
             </ListGroup>
           </Container>
-      </div>
+    </div>  
     );
   }
 }
