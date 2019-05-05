@@ -48,8 +48,8 @@ constructor(props) {
               Proday
               </b>
               </Navbar.Brand>
-              <Navbar bg="none" variant="dark">
-                  <Form inline>
+              <Navbar bg="none" style={{marginLeft:-15,marginRight:-15}}>
+                  <Form inline style={{width:'100%',marginRight:-15}}>
                       <InputGroup className="mb-3" style={{marginRight:10}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}>
@@ -87,7 +87,7 @@ constructor(props) {
 
                       </InputGroup>
 
-                      <InputGroup className="mb-3" style={{marginRight:10}}>
+                      <InputGroup className="mb-3" style={{width:'37.9%'}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}>
                               <i class="material-icons">
