@@ -1,0 +1,26 @@
+body {
+    background-color: #f7f8f9;
+    margin: 0;
+  }
+  
+  
+  .header {
+    background-color:#3d87f3;
+    padding: 0;
+  }
+  
+
+  .header-left span{
+      color: #f7f8f9;
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+
+
+  .content {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px 0px 10px 0px;
+   
+  }
