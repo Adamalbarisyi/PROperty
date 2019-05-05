@@ -11,13 +11,23 @@ import Trending from "./screens/home/Trending";
 import Property from "./screens/home/Property";
  
 class Main extends Component {
+   _handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      console.log('Proses Mencari');
+    }
+  }
+
   render() {
     return (
     <HashRouter>
     <div>
         <div className="header" >
             <Container style={{marginBottom:-20}}>
-              <Navbar.Brand style={{color: 'white'}}>Proday</Navbar.Brand>
+              <Navbar.Brand style={{color: 'white'}}>
+              <b>
+              Proday
+              </b>
+              </Navbar.Brand>
               <Navbar bg="none" variant="dark">
                   <Form inline>
                       <InputGroup className="mb-3" style={{marginRight:10}}>
@@ -36,22 +46,22 @@ class Main extends Component {
 
                       <InputGroup className="mb-3" style={{marginRight:10}}>
                           <InputGroup.Prepend>
-                              <InputGroup.Text id="basic-addon1" style={{backgroundColor: 'white'}}>Semua Jenis</InputGroup.Text>
+                              <InputGroup.Text id="basic-addon1" style={{backgroundColor: 'white'}}></InputGroup.Text>
                           </InputGroup.Prepend>
-                          <DropdownButton as={InputGroup.Append} variant="light" title="" id="input-group-dropdown-2">
-                              <Dropdown.Item href="#">Action</Dropdown.Item>
-                              <Dropdown.Item href="#">Another action</Dropdown.Item>
-                              <Dropdown.Item href="#">Something else here</Dropdown.Item>
+
+                        <DropdownButton as={InputGroup.Append} style={{marginLeft:-22, paddingRigth:30}} variant="light" title="Semua Jenis" id="input-group-dropdown-2" onSelect={function(evt){console.log(evt)}}>
+                          <Dropdown.Item eventKey='jual'>Jual</Dropdown.Item>
                               <Dropdown.Divider />
-                              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-                          </DropdownButton>
+                              <Dropdown.Item eventKey='sewa'>Sewa</Dropdown.Item>
+                        </DropdownButton>
+
                       </InputGroup>
 
                       <InputGroup className="mb-3" style={{marginRight:10}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="basic-addon1" style={{backgroundColor: 'white'}}>@</InputGroup.Text>
                           </InputGroup.Prepend>
-                          <FormControl placeholder="Cari Kata Kunci.." aria-label="Username" aria-describedby="basic-addon1" />
+                          <FormControl placeholder="Cari Kata Kunci.." aria-label="Username" onKeyDown={this._handleKeyDown}  aria-describedby="basic-addon1" />
                       </InputGroup>
 
                   </Form>
