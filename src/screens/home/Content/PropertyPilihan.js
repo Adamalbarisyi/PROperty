@@ -44,7 +44,6 @@ export default class Carousel_trending extends Component {
 
    render() {
            let children = []
-
            if (this.state.isLoad) {
                children = this.state.data
                console.log(children)

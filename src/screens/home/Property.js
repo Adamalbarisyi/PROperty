@@ -1,6 +1,6 @@
 import React, { Component } from "react";
  
-import PropertyPilihan from './Trending/PropertyPilihan'
+import PropertyPilihan from './Content/PropertyPilihan'
 class Property extends Component {
   render() {
     return (
