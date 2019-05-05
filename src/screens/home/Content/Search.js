@@ -45,7 +45,7 @@ constructor(props) {
    <Container style={{marginBottom:-20}}>
               <Navbar.Brand style={{color: 'white'}}>
               <b>
-              Proday
+              PROperty
               </b>
               </Navbar.Brand>
               <Navbar bg="none" style={{marginLeft:-15,marginRight:-15}}>
@@ -73,11 +73,13 @@ constructor(props) {
                       </InputGroup>
 
                       <InputGroup className="mb-3" style={{marginRight:10}}>
-                          <InputGroup.Prepend>
-                              <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}></InputGroup.Text>
-                          </InputGroup.Prepend>
+                           <FormControl
+                            placeholder={this.state.jenis}
+                            id="icon_search"
+                            style={{width:135,pointerEvents:'none'}}
+                            />
 
-                        <DropdownButton as={InputGroup.Append} style={{marginLeft:-22}} variant="light" title={this.state.jenis}  id="input-group-dropdown-2">
+                        <DropdownButton as={InputGroup.Append} variant="light" id="input-group-dropdown-2">
                               <Dropdown.Item eventKey='jual' onClick={() => this.setState({jenis:'Semua Jenis'})}>Semua Jenis</Dropdown.Item>
                               <Dropdown.Divider />
                               <Dropdown.Item eventKey='jual' onClick={() => this.setState({jenis:'Dijual'})}>Jual</Dropdown.Item>
@@ -87,7 +89,7 @@ constructor(props) {
 
                       </InputGroup>
 
-                      <InputGroup className="mb-3" style={{width:'37.9%'}}>
+                      <InputGroup className="mb-3" style={{width:'34.6%'}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}>
                               <i class="material-icons">
