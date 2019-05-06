@@ -25,8 +25,18 @@ class Kategori extends Component {
           <Row>
             <Col>
             <center>
+             <button className="btn">
+              <Image style={{width:100,height:100,  marginBottom:15}} src={Tanah} rounded alt="logo"/>
+              <span>Tanah</span>
+              </button>
+            </center>
+            </Col>
+            <Col>
+            <center>
+             <button className="btn">
                <Image style={{width:100,height:100, marginBottom:15}} src={Rumah} rounded alt="logo"/>
               <span>Rumah</span>
+            </button>
               </center>
             </Col>
             <Col>     
@@ -41,12 +51,7 @@ class Kategori extends Component {
               <span>Indekos</span>
             </center>
             </Col>
-            <Col>
-            <center>
-              <Image style={{width:100,height:100,  marginBottom:15}} src={Tanah} rounded alt="logo"/>
-              <span>Tanah</span>
-            </center>
-            </Col>
+            
             <Col>
             <center>
               <Image style={{width:100,height:100,  marginBottom:15}} src={Ruko} rounded alt="logo"/>

@@ -20,6 +20,7 @@ export default class Carousel_trending extends Component {
   async componentWillMount() {
       console.log("Component A Will Mount")
       const url = this.state.url
+      console.log(url)
       console.log("SetState with AsyncFetch")
       await this.setStateAsync({
           isLoad: true,

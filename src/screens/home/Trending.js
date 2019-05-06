@@ -8,8 +8,8 @@ class Trending extends Component {
         <h3> <img style={{width:45,height:45, marginRight:10}} src={Trend}  alt="logo"/>Trending</h3>
           <Container>
             <ListGroup variant="flush" style={{marginLeft:-20}}>
-              <ListGroup.Item style={{marginBottom:-5}}>1. Rumah</ListGroup.Item>
-              <ListGroup.Item style={{marginBottom:-5}}>2. Tanah</ListGroup.Item>
+              <ListGroup.Item style={{marginBottom:-5}}>1. Tanah</ListGroup.Item>
+              <ListGroup.Item style={{marginBottom:-5}}>2. Rumah</ListGroup.Item>
               <ListGroup.Item style={{marginBottom:-5}}>3. Indekos</ListGroup.Item>
               <ListGroup.Item style={{marginBottom:-5}}>4. Apartemen</ListGroup.Item>
               <ListGroup.Item style={{marginBottom:-5}}>5. Villa</ListGroup.Item>
