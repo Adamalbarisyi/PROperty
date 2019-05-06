@@ -24,13 +24,13 @@ class Main extends Component {
 
             <Container>
                 <Row>
-                    <Col xs={12} md={8}>
+                    <Col xs={12} md={9}>
                     <div className="content">
                         <Route exact path="/" component={Kategori}/>
                     </div>
                     </Col>
 
-                    <Col xs={12} md={4}>
+                    <Col xs={12} md={3}>
                     <div className="content">
                         <Route exact path="/" component={Trending}/>
                     </div>
