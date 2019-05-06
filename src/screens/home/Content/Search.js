@@ -96,7 +96,7 @@ constructor(props) {
 
                       </InputGroup>
 
-                      <InputGroup className="mb-3" style={{width:'34.6%'}}>
+                      <InputGroup className="mb-3" style={{width:'33.6%'}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}>
                               <i className="material-icons">
