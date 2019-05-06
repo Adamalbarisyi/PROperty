@@ -50,9 +50,8 @@ constructor(props) {
     return (
    <Container style={{marginBottom:-20}}>
               <Navbar.Brand style={{color: 'white'}}>
-              <b>
-              PROperty
-              </b>
+              <b>PROperty</b>
+                
               </Navbar.Brand>
               <Navbar bg="none" style={{marginLeft:-15,marginRight:-15}}>
                   

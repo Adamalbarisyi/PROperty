@@ -83,7 +83,7 @@ export default class Carousel_trending extends Component {
 
 return (
  <Container>
-    <div>
+    <div style={{paddingBottom:30}}>
         { ! this.state.isLoad && <label>Loading ... </label> }
         <Slider {...settings}>
             { this.state.isLoad && children.map((value, index) =>

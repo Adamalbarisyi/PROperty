@@ -17,7 +17,7 @@ class Trending extends Component {
               <ListGroup.Item style={{marginBottom:-5}}>7. Kios</ListGroup.Item>
               <ListGroup.Item style={{marginBottom:-5}}>8. Gedung</ListGroup.Item>
               <ListGroup.Item style={{marginBottom:-5}}>9. Kantor</ListGroup.Item>
-              <ListGroup.Item style={{marginBottom:-13}}>10. Pabrik</ListGroup.Item>
+              <ListGroup.Item style={{marginBottom:-0}}>10. Pabrik</ListGroup.Item>
 
             </ListGroup>
           </Container>
