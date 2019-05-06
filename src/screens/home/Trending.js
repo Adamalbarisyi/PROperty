@@ -5,7 +5,7 @@ class Trending extends Component {
   render() {
     return (
       <div>
-        <h2> <img style={{width:45,height:45, marginRight:10}} src={Trend}  rounded alt="logo"/>Trending</h2>
+        <h3> <img style={{width:45,height:45, marginRight:10}} src={Trend}  alt="logo"/>Trending</h3>
           <Container>
             <ListGroup variant="flush" style={{marginLeft:-20}}>
               <ListGroup.Item style={{marginBottom:-5}}>1. Rumah</ListGroup.Item>

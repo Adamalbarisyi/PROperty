@@ -88,8 +88,8 @@ return (
             { this.state.isLoad && children.map((value, index) =>
 
             <React.Fragment key={value.id}>
-
-                <Card style={{ width: '15rem',margin:5}}>
+              <center>
+                <Card style={{ width: '16rem',margin:10}}>
                     <Card.Img variant="top" src="http://via.placeholder.com/286x180" />
 
                     <Card.Body>
@@ -105,6 +105,7 @@ return (
                     </Card.Body>
 
                 </Card>
+                </center>
             </React.Fragment>
 
             ) }

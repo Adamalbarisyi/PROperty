@@ -20,7 +20,7 @@ class Kategori extends Component {
   render() {
     return (
       <div>
-        <h2><img style={{width:45,height:45, marginRight:20}} src={Category}  rounded alt="logo"/> Kategori Utama</h2>
+        <h3><img style={{width:45,height:45, marginRight:20}} src={Category} alt="logo"/> Kategori Utama</h3>
         <Container style={{marginTop:60}}>
           <Row>
             <Col>
