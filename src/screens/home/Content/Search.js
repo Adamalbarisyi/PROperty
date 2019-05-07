@@ -36,6 +36,7 @@ constructor(props) {
   this.setState({title: event.target.value})
 }
 
+
    render() {
     const Pop_alamat = (
   <Popover  title="Pilih Lokasi">
@@ -48,7 +49,7 @@ constructor(props) {
   </Popover>
     );
     return (
-   <Container style={{marginBottom:-20}}>
+   <Container style={{marginBottom:-20}} >
               <Navbar.Brand style={{color: 'white'}}>
               <b>PROperty</b>
                 
@@ -95,7 +96,7 @@ constructor(props) {
 
                       </InputGroup>
 
-                      <InputGroup className="mb-3" style={{width:'33.6%'}}>
+                      <InputGroup className="mb-3" style={{width:'32.7%'}}>
                           <InputGroup.Prepend>
                               <InputGroup.Text id="icon_search" style={{backgroundColor: 'white'}}>
                               <i className="material-icons">

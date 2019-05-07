@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import AsyncFetch from '../../../api/AsyncFetch'
 import { Card, Button, Container, Badge } from 'react-bootstrap';
 import Slider from "react-slick";
-import millify from 'millify'
+import millify from 'millify';
+import ListIklan from '../iklan/ListIklan';
 
 export default class Carousel_trending extends Component {
 
@@ -42,6 +43,7 @@ export default class Carousel_trending extends Component {
           return ""
       }
   }
+
 
    render() {
            let children = []
@@ -91,8 +93,9 @@ return (
             <React.Fragment key={value.id}>
               <center>
                 <Card style={{ width: '16rem',margin:10}}>
-                    <Card.Img variant="top" src="http://via.placeholder.com/286x180" />
-
+                    
+                        <Card.Img  variant="top" src="http://via.placeholder.com/286x180" />
+                 
                     <Card.Body>
                         <Badge variant="secondary">{value.kategori}</Badge>
                         <Card.Title style={{fontWeight:540}}>{(value.title.substring(0,60))}</Card.Title>
@@ -101,7 +104,7 @@ return (
                         Rp {this.ambilangka(value.harga)}
                             <h2 style={{fontSize:15, color: '#95a5a6', float: 'right', marginLeft:10}}> {this.nego(value.nego)}</h2>
                         </Card.Title>
-                        <Button variant="outline-warning" style={{ width: '100%', height: '30%', justifyContent: 'center', alignItems: 'center'}}>
+                        <Button onClick={{}}  variant="outline-warning" style={{ width: '100%', height: '30%', justifyContent: 'center', alignItems: 'center'}}>
                         Hubungi Penjual</Button>
                     </Card.Body>
 

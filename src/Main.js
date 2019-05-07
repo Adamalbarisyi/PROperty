@@ -70,7 +70,7 @@ class Main extends Component {
                             </div>
 
                                  <div style={{marginLeft:-20,marginRight:-20,marginBottom:-20,padding:30,background:"#e8edf1"}} >
-                                    <span style={{fontSize:20}}><center>2019 All Rights Reserved PROperty.com</center></span>
+                                    <span style={{fontSize:16}}><center>2019 All Rights Reserved PROperty.com</center></span>
                                 </div>
                             </div>
                         </div>
