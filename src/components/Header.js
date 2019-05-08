@@ -8,7 +8,7 @@ import {Navbar, Form, FormControl,
   InputGroup} from 'react-bootstrap';
 
 
-export default class Search extends Component {
+export default class Header extends Component {
 
 
 constructor(props) {

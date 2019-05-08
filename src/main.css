@@ -11,10 +11,8 @@ body {
   }
   
 
-  .header-left span{
-      color: #f7f8f9;
-      font-size: 25px;
-      font-weight: bold;
+  .footer{
+    margin-bottom:40px;
   }
 
 

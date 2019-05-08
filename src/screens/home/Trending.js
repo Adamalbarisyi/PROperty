@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import {ListGroup,Container } from 'react-bootstrap';
+import {ListGroup,Container,Col } from 'react-bootstrap';
 import Trend from '../../assets/icon_content/Group 416.png';
 class Trending extends Component {
   render() {
     return (
-      <div>
+       <Col xs={12} md={3}>
+          <div className="content">
         <h3> <img style={{width:45,height:45, marginRight:10}} src={Trend}  alt="logo"/>Trending</h3>
           <Container>
             <ListGroup variant="flush" style={{marginLeft:-20}}>
@@ -21,7 +22,8 @@ class Trending extends Component {
 
             </ListGroup>
           </Container>
-    </div>  
+        </div>
+      </Col>
     );
   }
 }

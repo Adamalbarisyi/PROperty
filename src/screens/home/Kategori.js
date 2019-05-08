@@ -19,7 +19,8 @@ import Pabrik from '../../assets/icon_kategori/10pabrikV3.png';
 class Kategori extends Component {
   render() {
     return (
-      <div>
+       <Col xs={12} md={9}>
+                    <div className="content">
         <h3><img style={{width:45,height:45, marginRight:20}} src={Category} alt="logo"/> Kategori Utama</h3>
         <Container style={{marginTop:60}}>
           <Row>
@@ -95,9 +96,8 @@ class Kategori extends Component {
              </Col>
           </Row>
         </Container>
-        
-      
-      </div>
+        </div>
+      </Col>
     );
   }
 }
