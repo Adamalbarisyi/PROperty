@@ -3,6 +3,7 @@ import { Card, Button, Container, Badge } from 'react-bootstrap';
 import Property from '../Property';
 import { Row, Col} from 'react-bootstrap';
 
+
 export default class ListIklan extends Component {
   render () {
    
@@ -30,8 +31,10 @@ export default class ListIklan extends Component {
                                   Rp 
                                       <h2 style={{fontSize:15, color: '#95a5a6', float: 'right', marginLeft:10}}> </h2>
                                   </Card.Title>
-                                  <Button variant="outline-warning" style={{ width: '100%', height: '30%', justifyContent: 'center', alignItems: 'center'}}>
-                                    Hubungi Penjual</Button>  
+                                    <a href="#DetailIklan">
+                                      <Button  variant="outline-warning" style={{ width: '100%', height: '30%', justifyContent: 'center', alignItems: 'center'}}>
+                                      Hubungi Penjual</Button>
+                                      </a>
                               </Card.Body>
 
                           </Card>
