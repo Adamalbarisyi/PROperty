@@ -8,6 +8,7 @@ import Trending from "./screens/home/Trending";
 import Property from "./screens/home/Property";
 import Footer from "./components/Footer";
 import ListIklan from './screens/home/iklan/ListIklan';
+import DetailIklan from './screens/home/iklan/DetailIklan';
  
 class Main extends Component {
   render() {
@@ -21,9 +22,10 @@ class Main extends Component {
         <div className="main-content" style={{marginTop:20}}>
             <Container>
                 <Row>
-                    <Route exact path="/ListIklan" component={ListIklan}/>
                     <Route exact path="/" component={Kategori}/>
                     <Route exact path="/" component={Trending}/>
+                    <Route exact path="/ListIklan" component={ListIklan}/>
+                     <Route exact path="/DetailIklan" component={DetailIklan}/>
                 </Row>
             </Container>
             
