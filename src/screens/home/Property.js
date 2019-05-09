@@ -103,7 +103,9 @@ class Property extends Component {
               <center>
                 <Card style={{ width: '16rem',margin:10}}>
                     
-                        <Card.Img  variant="top" src="http://via.placeholder.com/286x180" />
+                        <Card.Img  variant="top" src={value.foto} onError={(e) => {
+                        e.target.src = 'https://increasify.com.au/wp-content/uploads/2016/08/default-image.png' // some replacement image
+                         }} />
                  
                     <Card.Body>
                         <Badge variant="secondary">{value.kategori}</Badge>
