@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
 import {Container, Row} from 'react-bootstrap';
-
+import ScrollToTop from 'react-router-scroll-top'   
 import Header from './components/Header'
 import Kategori from "./screens/home/Kategori";
 import Trending from "./screens/home/Trending";
@@ -13,8 +13,10 @@ import DetailIklan from './screens/home/iklan/DetailIklan';
 class Main extends Component {
   render() {
     return (
+
     <HashRouter>
     <div>
+    <ScrollToTop/>
         <div className="header" >
             <Header/>
         </div>
@@ -24,14 +26,14 @@ class Main extends Component {
                 <Row>
                     <Route exact path="/" component={Kategori}/>
                     <Route exact path="/" component={Trending}/>
-                    <Route exact path="/ListIklan" component={ListIklan}/>
+                    <Route onUpdate={() => window.scrollTo(0, 0)}  exact path="/ListIklan" component={ListIklan}/>
                      <Route exact path="/DetailIklan" component={DetailIklan}/>
                 </Row>
             </Container>
             
             <Container>
                 <Row>
-                    <Route exact path="/" component={Property}/>
+                    <Route onUpdate={() => window.scrollTo(0, 0)} exact path="/" component={Property}/>
                     
                 </Row>
 
